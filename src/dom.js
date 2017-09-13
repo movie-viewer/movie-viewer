@@ -12,9 +12,10 @@ function changeH1 () {
 function movieList () {
     // changeH1();
     getMovies().then((movies) => {
+        h1.innerHTML = "";
         // console.log('Here are all the movies:');
         movies.forEach(({title, rating, id}) => {
-            p.innerHTML =(`id#${id} - ${title} - rating: ${rating}`);
+           h1.innerHTML += `<li>id#${id} - ${title} - rating: ${rating}</li>`;
         });
     }).catch((error) => {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
