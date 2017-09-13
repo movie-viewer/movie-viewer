@@ -1,23 +1,20 @@
 const getMovies = require('./getMovies.js');
 
-let p = document.body.getElementsByTagName("p");
-
+let p = document.getElementById("p");
+let h1 = document.getElementById("h1");
 
 function changeH1 () {
-    let h1 = document.body.getElementsByTagName("h1");
-    h1[0].innerHTML = "Loading";
+    h1.innerHTML = "Loading";
+    console.log("It's working really..");
 }
 
 
-module.exports = changeH1;
-
-
 function movieList () {
+    // changeH1();
     getMovies().then((movies) => {
-        console.log(movies[0]);
         // console.log('Here are all the movies:');
         movies.forEach(({title, rating, id}) => {
-            p[0].innerHTML =(`id#${id} - ${title} - rating: ${rating}`);
+            p.innerHTML =(`id#${id} - ${title} - rating: ${rating}`);
         });
     }).catch((error) => {
         alert('Oh no! Something went wrong.\nCheck the console for details.');
@@ -25,5 +22,5 @@ function movieList () {
     });
 
 }
-//
-module.exports = movieList;
+
+module.exports = {changeH1, movieList};
