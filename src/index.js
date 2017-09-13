@@ -5,8 +5,10 @@
 import sayHello from './hello';
 sayHello('World');
 const changeH1 = require('./dom');
-const movieList = require("./dom");
-movieList();
+const dom = require("./dom");
+
+dom.movieList();
+dom.changeH1();
 
 // import changeH1 from './dom';
 
@@ -14,6 +16,6 @@ movieList();
  * require style imports
  */
 const getMovies = require('./getMovies.js');
-// changeH1()
+
 
 
