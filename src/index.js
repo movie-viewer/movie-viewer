@@ -6,16 +6,19 @@ import sayHello from './hello';
 sayHello('World');
 const changeH1 = require('./dom');
 const dom = require("./dom");
-
+const getMovies = require('./getMovies.js');
 
 const submitBtn = document.getElementById("submitBtn");
 
 submitBtn.addEventListener('click',
-    () => fetchTest()
+    () => {
+    let title;
+    let rating;
+    fetchTest(title, rating)
+}
     );
 
-const fetchTest = () => {
-
+const fetchTest = (title, rating) => {
     let url = 'api/movies';
     let options = {
         headers: {
@@ -24,14 +27,16 @@ const fetchTest = () => {
         method: "POST",
         body: JSON.stringify(
             {
-                "title": ,
-                "rating":
+                "title": title,
+                "rating": rating
             })
     };
     return fetch(url, options)
         .then(response => response.json())
-        .then(response => console.log("It works!"))
-        .catch(response => console.log("Something went wrong with the fetch"))
+        .then(response => a = response.title)
+        .then(response => console.log(a));
+
+
 };
 
 
@@ -45,7 +50,30 @@ dom.changeH1();
 /**
  * require style imports
  */
-const getMovies = require('./getMovies.js');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
