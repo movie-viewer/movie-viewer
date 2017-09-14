@@ -1,0 +1,33 @@
+
+const submitBtn = document.getElementById("submitBtn");
+    submitBtn.addEventListener('click',
+        () => {
+            let title = document.getElementById("movie").value;
+            let rating = document.querySelector("[type=radio]:checked").value;
+            fetchInput(title, rating);
+            console.log(title);
+            console.log(rating);
+        }
+    );
+
+
+const fetchInput = (title, rating) => {
+    let url = 'api/movies';
+    let options = {
+        headers: {
+            "content-type": "application/json"
+        },
+        method: "POST",
+        body: JSON.stringify(
+            {
+                "title": title,
+                "rating": rating
+            })
+    };
+    return fetch(url, options)
+        .then(response => response.json());
+};
+
+
+
+module.exports = fetchInput;

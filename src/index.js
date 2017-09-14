@@ -1,56 +1,22 @@
-
-/**
- * es6 modules and imports
- */
-import sayHello from './hello';
-sayHello('World');
 const changeH1 = require('./dom');
 const dom = require("./dom");
+const fetchInput = require("./submit.js");
 const getMovies = require('./getMovies.js');
-
-const submitBtn = document.getElementById("submitBtn");
 
 let edit = document.getElementById("edit");
 let h1 = document.getElementById("h1");
-
-submitBtn.addEventListener('click',
-    () => {
-    let title = document.getElementById("movie").value;
-    let rating = document.querySelector("[type=radio]:checked").value;
-    fetchTest(title, rating);
-        console.log(title);
-    console.log(rating);
-}
-    );
-
-const fetchTest = (title, rating) => {
-    let url = 'api/movies';
-    let options = {
-        headers: {
-            "content-type": "application/json"
-        },
-        method: "POST",
-        body: JSON.stringify(
-            {
-                "title": title,
-                "rating": rating
-            })
-    };
-    return fetch(url, options)
-        .then(response => response.json());
-};
 
 
 dom.movieList();
 dom.changeH1();
 
-edit.addEventListener("click", ()=> {
-    for(let i=0; i > h1.length; i++ ){
-        console.log("h1");
-    }
-});
+// edit.addEventListener("click", ()=> {
+//     for(let i=0; i > h1.length; i++ ){
+//         console.log("h1");
+//     }
+// });
 
-// import changeH1 from './dom';
+
 
 /**
  * require style imports

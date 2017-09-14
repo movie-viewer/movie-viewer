@@ -29,7 +29,11 @@
       "title": "rugrats",
       "rating": "4",
       "id": 6
+    },
+    {
+      "title": "Fake Movie",
+      "rating": "4",
+      "id": 7
     }
-
   ]
 }
