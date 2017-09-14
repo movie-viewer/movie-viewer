@@ -9,32 +9,20 @@
 
     <div class="container">
         <h1 id="h1">Hello There!</h1>
+        <div id="form">
+            <form method="POST" action="api/movies">
+                <label for="movie">Movie Title</label>
+                <input id="movie" name="title" type="text">
+                <br>
+                <input type="radio" name="rating" value="1" checked> 1
+                <input type="radio" name="rating" value="2"> 2
+                <input type="radio" name="rating" value="3"> 3
+                <input type="radio" name="rating" value="4"> 4
+                <input type="radio" name="rating" value="5"> 5
+                <input type="submit">
+            </form>
+        </div>
         <!--<p id="p">To get started, edit <code>src/index.js</code>.</p>-->
-    </div>
-
-    <div id="form">
-        <form method="POST" action="">
-
-            <label for="movie">Movie Title</label>
-            <input id="movie" name="movie-title" type="text">
-            <br>
-
-            <input type="radio" name="gender" value="male" checked> Male<br>
-            <input type="radio" name="gender" value="female"> Female<br>
-            <input type="radio" name="gender" value="other"> Other
-            <br>
-
-
-            <!--why isnt this working?!?-->
-
-            <!--<input id="1" type=“radio” name=“chooseone” value=“1”>1-->
-            <!--<input id="2" type=“radio” name=“chooseone” value="2"><label for="2">2</label>-->
-            <!--<input type=“radio” name=“chooseone” value="3"><label for=“JS”>3</label>-->
-            <!--<input type=“radio” name=“chooseone” value="4"><label for=“PHP”>4</label>-->
-            <!--<input type=“radio” name=“chooseone” value=“5”><label for=“Ruby”>5</label>-->
-
-            <input type="submit">
-        </form>
     </div>
 
     <script src="/main.js"></script>
