@@ -10,6 +10,8 @@ const getMovies = require('./getMovies.js');
 
 const submitBtn = document.getElementById("submitBtn");
 
+let edit = document.getElementById("edit");
+let h1 = document.getElementById("h1");
 
 submitBtn.addEventListener('click',
     () => {
@@ -42,7 +44,11 @@ const fetchTest = (title, rating) => {
 dom.movieList();
 dom.changeH1();
 
-
+edit.addEventListener("click", ()=> {
+    for(let i=0; i > h1.length; i++ ){
+        console.log("h1");
+    }
+});
 
 // import changeH1 from './dom';
 
