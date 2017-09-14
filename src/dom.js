@@ -24,4 +24,10 @@ function movieList () {
 
 }
 
+let targetLi = document.querySelectorAll("li");
+
+targetLi.addEventListener("click", ()=> {
+
+});
+
 module.exports = {changeH1, movieList};

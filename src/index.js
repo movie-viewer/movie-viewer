@@ -10,11 +10,14 @@ const getMovies = require('./getMovies.js');
 
 const submitBtn = document.getElementById("submitBtn");
 
+
 submitBtn.addEventListener('click',
     () => {
-    let title;
-    let rating;
-    fetchTest(title, rating)
+    let title = document.getElementById("movie").value;
+    let rating = document.querySelector("[type=radio]:checked").value;
+    fetchTest(title, rating);
+        console.log(title);
+    console.log(rating);
 }
     );
 
@@ -32,11 +35,7 @@ const fetchTest = (title, rating) => {
             })
     };
     return fetch(url, options)
-        .then(response => response.json())
-        .then(response => a = response.title)
-        .then(response => console.log(a));
-
-
+        .then(response => response.json());
 };
 
 
