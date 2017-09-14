@@ -6,9 +6,7 @@ const getMovies = require('./getMovies.js');
 let edit = document.getElementById("edit");
 let h1 = document.getElementById("h1");
 
-
 dom.movieList();
-dom.changeH1();
 
 // edit.addEventListener("click", ()=> {
 //     for(let i=0; i > h1.length; i++ ){
@@ -16,7 +14,7 @@ dom.changeH1();
 //     }
 // });
 
-
+// let edit = document.getElementById("edit");
 
 /**
  * require style imports

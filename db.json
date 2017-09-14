@@ -34,6 +34,16 @@
       "title": "Fake Movie",
       "rating": "4",
       "id": 7
+    },
+    {
+      "title": "Faker Movie",
+      "rating": "3",
+      "id": 8
+    },
+    {
+      "title": "Fakest Movie",
+      "rating": "2",
+      "id": 9
     }
   ]
 }
