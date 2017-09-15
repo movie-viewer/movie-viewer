@@ -2,7 +2,10 @@
 
 function editMovie () {
     $(".editBtn").on("click", function(){
-        console.log("did it!");
+        $("#id").val($(this).attr("data-id"));
+        $("#edit-movie-title").val($(this).attr("data-title"));
+        $("#edit-${data-").prop('checked',true);
+
     });
 }
 
