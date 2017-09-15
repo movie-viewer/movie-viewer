@@ -1,12 +1,17 @@
 const changeH1 = require('./dom');
 const dom = require("./dom");
-const fetchInput = require("./submit.js");
-const getMovies = require('./getMovies.js');
+const fetchInput = require("./submit");
+const getMovies = require('./getMovies');
+const editModule = require('./edit');
 
-let edit = document.getElementById("edit");
+// let edit = document.getElementById("edit");
 let h1 = document.getElementById("h1");
 
 dom.movieList();
+//editModule.editInput();
+
+
+
 
 // edit.addEventListener("click", ()=> {
 //     for(let i=0; i > h1.length; i++ ){
@@ -14,7 +19,7 @@ dom.movieList();
 //     }
 // });
 
-// let edit = document.getElementById("edit");
+
 
 /**
  * require style imports
