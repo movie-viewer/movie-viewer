@@ -2,9 +2,21 @@ html, body {
     height: 100%;
 }
 
-.container {
-    position: relative;
-    top: 50%;
-    transform: translateY(-100%);
-    text-align: center;
+/*.container {*/
+    /*position: relative;*/
+    /*top: 50%;*/
+    /*transform: translateY(-100%);*/
+    /*text-align: center;*/
+/*}*/
+
+.row .col.s6 {
+    margin-top: 25px;
+}
+
+.row .col.s2 {
+    margin-top: 25px;
+}
+
+.prefix ~ label {
+    margin-left: 2rem;
 }

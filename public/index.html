@@ -15,25 +15,70 @@
 <body>
 
     <div class="container">
-        <ul id="listss"></ul>
-        <div id="form">
-            <form method="" action="">
-                <label for="movie">Movie Title</label>
-                <input id="movie" name="title" type="text">
-                <br>
-                <input id="1" type="radio" name="rating" value="1"> 1
-                <input id="2" type="radio" name="rating" value="2"> 2
-                <input id="3" type="radio" name="rating" value="3"> 3
-                <input id="4" type="radio" name="rating" value="4"> 4
-                <input id="5" type="radio" name="rating" value="5"> 5
-            <button id="submitBtn">Submit</button>
+        <div class="row">
+            <form class="col s12">
+                <div class="row">
+                    <div class="input-field col s3">
+                        <i class="material-icons prefix">movie</i>
+                        <input type="text" id="movie-title" class="validate">
+                        <label for="movie-title">Title</label>
+                    </div>
+                    <div class="col s6">
+                        <i class="material-icons prefix">star</i>
+                        <input name="rating" type="radio" id="1" />
+                        <label for="1">1</label>
+                        <input name="rating" type="radio" id="2" />
+                        <label for="2">2</label>
+                        <input name="rating" type="radio" id="3" />
+                        <label for="3">3</label>
+                        <input name="rating" type="radio" id="4" />
+                        <label for="4">4</label>
+                        <input name="rating" type="radio" id="5" />
+                        <label for="5">5</label>
+                    </div>
+                    <div class="col s2">
+                        <a class="waves-effect waves-light btn" id="submitBtn"><i class="material-icons left">create</i>
+                            Add</a>
+                    </div>
+                </div>
             </form>
-
-            <button id="edit">edit movie list</button>
         </div>
 
-        <!--<p id="p">To get started, edit <code>src/index.js</code>.</p>-->
+        <table class="striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Rating</th>
+                    <th>Edit Movie</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody">
+
+            </tbody>
+        </table>
     </div>
+
+
+
+        <!--<ul id="listss"></ul>-->
+        <!--<div id="form">-->
+            <!--<form method="" action="">-->
+                <!--<label for="movie">Movie Title</label>-->
+                <!--<input id="movie" name="title" type="text">-->
+                <!--<br>-->
+                <!--<input id="1" type="radio" name="rating" value="1"> 1-->
+                <!--<input id="2" type="radio" name="rating" value="2"> 2-->
+                <!--<input id="3" type="radio" name="rating" value="3"> 3-->
+                <!--<input id="4" type="radio" name="rating" value="4"> 4-->
+                <!--<input id="5" type="radio" name="rating" value="5"> 5-->
+            <!--<button id="submitBtn">Submit</button>-->
+            <!--</form>-->
+
+            <!--<button id="edit">edit movie list</button>-->
+        <!--</div>-->
+
+        <!--<p id="p">To get started, edit <code>src/index.js</code>.</p>-->
+
     <script src="/main.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
