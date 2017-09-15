@@ -14,7 +14,7 @@ function movieList () {
         movies.forEach(({title, rating, id}) => {
 
             tableBody.innerHTML +=
-                `<td>${title}</td>
+                `<td>${id} - ${title}</td>
                 <td>${rating}</td>
                 <td>${editBtn}</td>`
 

@@ -31,77 +31,19 @@
       "id": 6
     },
     {
-      "title": "Fake Movie",
-      "rating": "4",
+      "title": "hey",
+      "rating": "on",
       "id": 7
     },
     {
-      "title": "Faker Movie",
-      "rating": "3",
+      "title": "hey",
+      "rating": "on",
       "id": 8
     },
     {
-      "title": "Fakest Movie",
-      "rating": "2",
+      "title": "ww",
+      "rating": "on",
       "id": 9
-    },
-    {
-      "title": "Fakest Movie the Sequel",
-      "rating": "on",
-      "id": 10
-    },
-    {
-      "title": "Fakest Movie the Sequel",
-      "rating": "on",
-      "id": 11
-    },
-    {
-      "title": "",
-      "rating": "on",
-      "id": 12
-    },
-    {
-      "title": "",
-      "rating": "on",
-      "id": 13
-    },
-    {
-      "title": "",
-      "rating": "on",
-      "id": 14
-    },
-    {
-      "title": "",
-      "rating": "on",
-      "id": 15
-    },
-    {
-      "title": "Hello ",
-      "rating": false,
-      "id": 16
-    },
-    {
-      "title": "Hello ",
-      "rating": false,
-      "id": 17
-    },
-    {
-      "title": "Another movie",
-      "rating": true,
-      "id": 18
-    },
-    {
-      "title": "",
-      "id": 19
-    },
-    {
-      "title": "",
-      "id": 20
-    },
-    {
-      "title": "",
-      "rating": "on",
-      "id": 21
     }
   ]
 }
