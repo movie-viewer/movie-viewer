@@ -1,23 +1,14 @@
 // const getMovies = require('./getMovies.js');
 
-let edit = document.getElementById("edit");
-let inputField = document.getElementById("movie");
-
-function editInput() {
-    let liList = document.getElementsByTagName("li");
-
-    for(let li of liList){
-        console.log("Hello");
-        console.log(li);
-    }
-
+function editMovie () {
+    $(".editBtn").on("click", function(){
+        console.log("did it!");
+    });
 }
 
+$(document).ready(function(){
+    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+    $('.modal').modal();
+});
 
-// edit.addEventListener("click", ()=> {
-//     for(let i=0; i > h1.length; i++ ){
-//         console.log("h1");
-//     }
-// });
-
-module.exports = {editInput};
+module.exports = editMovie;

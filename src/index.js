@@ -2,13 +2,16 @@ const changeH1 = require('./dom');
 const dom = require("./dom");
 const fetchInput = require("./submit");
 const getMovies = require('./getMovies');
-const editModule = require('./edit');
+const editMovie = require('./edit');
 
 // let edit = document.getElementById("edit");
 let h1 = document.getElementById("h1");
 
 dom.movieList();
-editModule.editInput();
+getMovies().then(() => {
+    editMovie();
+});
+// editModule.editMovie();
 
 
 

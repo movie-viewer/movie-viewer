@@ -2,7 +2,7 @@ const getMovies = require('./getMovies.js');
 
 function movieList () {
     //Erase the loading message after movie list loads
-    let editBtn = `<a class="waves-effect waves-light btn" id="submitBtn"><i class="material-icons left">create</i>
+    let editBtn = `<a data-target="modal1" class="waves-effect waves-light btn editBtn btn modal-trigger"><i class="material-icons left">create</i>
         Edit</a>`;
     let tableBody = document.querySelector("#tableBody");
 
