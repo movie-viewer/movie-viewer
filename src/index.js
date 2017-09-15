@@ -8,9 +8,6 @@ const editMovie = require('./edit');
 let h1 = document.getElementById("h1");
 
 dom.movieList();
-getMovies().then(() => {
-    editMovie();
-});
 // editModule.editMovie();
 
 
