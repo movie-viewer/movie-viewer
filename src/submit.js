@@ -3,7 +3,7 @@ const submitBtn = document.getElementById("submitBtn");
     submitBtn.addEventListener('click',
         () => {
             let title = document.getElementById("movie-title").value;
-            let rating = document.getElementById('5').value
+            let rating = document.getElementById('5').value;
             fetchInput(title, rating);
             console.log(title);
             console.log(rating);
