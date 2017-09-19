@@ -23,7 +23,8 @@ function movieList () {
                 data-rating="${rating}">
                 <i class="material-icons left">create</i>Edit</a>
 
-                <a class="waves-effect waves-light btn editBtn btn modal-trigger red darken-3">
+                <a class="waves-effect waves-light btn deleteButton btn red darken-3"
+                data-delete="${id}">
                 <i class="material-icons left">clear</i>Delete</a>
                 </td>`
         });

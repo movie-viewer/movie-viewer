@@ -1,23 +1,18 @@
 {
   "movies": [
     {
-      "title": "Casablanca",
-      "rating": "4",
+      "title": "Solaris",
+      "rating": "3",
       "id": 1
     },
     {
-      "title": "Star Wars: A New Hope",
-      "rating": "5",
+      "title": "Yes Man",
+      "rating": "4",
       "id": 2
     },
     {
-      "title": "Kick Ass",
-      "rating": "5",
-      "id": 3
-    },
-    {
-      "title": "Hidden Figures",
-      "rating": "5",
+      "title": "The Notebook",
+      "rating": "4",
       "id": 4
     },
     {
@@ -26,34 +21,24 @@
       "id": 5
     },
     {
-      "title": "rugrats",
-      "rating": "4",
-      "id": 6
-    },
-    {
-      "title": "hey",
-      "rating": "on",
+      "title": "Bad Teacher",
+      "rating": "2",
       "id": 7
     },
     {
-      "title": "hey",
-      "rating": "on",
+      "title": "Iron Man",
+      "rating": "4",
       "id": 8
     },
     {
-      "title": "ww",
-      "rating": "on",
+      "title": "Duck Tales",
+      "rating": "4",
       "id": 9
     },
     {
-      "title": "hello",
-      "rating": "1",
+      "title": "Tail Spin",
+      "rating": "2",
       "id": 10
-    },
-    {
-      "title": "Hello",
-      "rating": "1",
-      "id": 11
     }
   ]
 }

@@ -34,7 +34,6 @@ const submitMovieEdit = () => {
                 {
                     "title": movieSettings.movieTitle,
                     "rating": movieSettings.movieRating,
-                    "id": movieSettings.movieId
                 })
         };
             return fetch(url, options)
