@@ -1,17 +1,17 @@
 
 const submitBtn = document.getElementById("submitBtn");
+
+
     submitBtn.addEventListener('click',
         () => {
             let title = document.getElementById("movie-title").value;
             let rating = document.querySelector("[type=radio]:checked").value;
-            fetchInput(title, rating);
-            console.log(title);
-            console.log(rating);
+            submitInput(title, rating);
+
         }
     );
 
-
-const fetchInput = (title, rating) => {
+const submitInput = (title, rating) => {
     let url = 'api/movies';
     let options = {
         headers: {
@@ -24,10 +24,10 @@ const fetchInput = (title, rating) => {
                 "rating": rating
             })
     };
-    return fetch(url, options)
+        fetch(url, options)
         .then(response => response.json());
 };
 
 
 
-module.exports = fetchInput;
+module.exports = submitInput;
